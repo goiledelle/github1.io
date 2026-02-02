@@ -19,39 +19,31 @@ body {
 
 /* Navigation Bar */
 .navbar {
-    background-color: #2c3e50;
-    color: white;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #333;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
 }
 
-.nav-links {
-    display: flex;
-    list-style: none;
-    gap: 2rem;
-}
-
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #3498db;
+.navbar a:hover {
+  text-decoration: underline;
 }
 
 /* Hero Section */
@@ -208,3 +200,4 @@ body {
         padding: 1.5rem;
     }
 }
+
